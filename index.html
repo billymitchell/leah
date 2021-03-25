@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
 </head>
 
 <body>
@@ -19,14 +20,14 @@
                     In Loving Memory
                 </b>
             </div>
-            <div>
+            <!-- <div>
                 <a href="/index.html">
                     Home
                 </a>
                 <a href="/memories/">
                     Memories
                 </a>
-            </div>
+            </div> -->
         </nav>
     </header>
     <main>
@@ -50,13 +51,13 @@
                 </div>
             </div>
             <div class="col-1">
-                <img src="/images/d5b292_4e921bb19e154e599fb4403a6849768f_mv2.webp" class="fluid fit-cover">
+                <img src="./images/d5b292_4e921bb19e154e599fb4403a6849768f_mv2.webp" class="fluid fit-cover">
             </div>
         </div>
-        <div id="leave-memory" class="col">
+        <div id="leave-memory" class="col col-rev">
 
             <div class="col-1">
-                <img src="/images/8xbJz94K.jpeg" class="fluid">
+                <img src="./images/8xbJz94K.jpeg" class="fluid">
             </div>
             <div class="col-1 flex-vertical-center">
                 <div class="text-container">
@@ -70,73 +71,494 @@
                 </div>
             </div>
         </div>
-        <div id=" donations" class="col">
-            <div class="col-1 flex-vertical-center">
-                <div class="text-container">
-                    <h1>Memorial
-                        Donations
-                    </h1>
-                    <p>
-                        Leah
-                        was
-                        passionate
-                        about
-                        several
-                        causes
-                        -
-                        racial
-                        justice,
-                        gender
-                        equality,
-                        mental
-                        health,
-                        to
-                        name
-                        a
-                        few.
-                        We've
-                        vetted
-                        and
-                        listed
-                        a
-                        few
-                        organizations
-                        here
-                        that
-                        are
-                        working
-                        on
-                        such
-                        issues,
-                        and
-                        ask
-                        donations
-                        be
-                        made
-                        in
-                        Leah's
-                        memory.
-                    </p>
-                    <p>
-                        <b>StopAAPIHate</b><br>
-                        <a
-                            href="https://donate.givedirect.org/?cid=14711">https://donate.givedirect.org/?cid=14711</a><br>
-                        <br>
-                        <b>KORAFF
-                            -
-                            Korean
-                            Adoptee
-                            Family
-                            Foundation</b><br>
-                        <a href="https://www.koraff.org/">https://www.koraff.org/</a>
-                    </p>
-                </div>
+        <div class="memories">
+            <!-- Hidden video div -->
+            <div style="display:none;" id="video1">
+                <video class="lg-video-object lg-html5" controls preload="none">
+                    <source src="./memories/video/video-1.mp4" type="video/mp4">
+                </video>
             </div>
-            <div class="col-1">
-                <img src="./images/nsplsh_39415f7065477253625a63_mv2_d_2848_4288_s_4_2.webp" class="fluid fit-cover">
+            <div style="display:none;" id="video2">
+                <video class="lg-video-object lg-html5" controls preload="none">
+                    <source src="./memories/video/video-2.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div style="display:none;" id="video3">
+                <video class="lg-video-object lg-html5" controls preload="none">
+                    <source src="./memories/video/video-3.mp4" type="video/mp4">
+                </video>
             </div>
 
+
+            <!-- Gallery  -->
+            <div id="lightgallery" class="grid">
+                <div class="grid-sizer"></div>
+                <div class="gutter-sizer"></div>
+
+
+
+
+                <div class="grid-item" data-src="./memories/images/1.jpeg" data-sub-html='
+                <h4>Stephanie Vink</h4>
+                <p>We bonded with our love of black clothing :)</p>
+                '> <img class="fluid" src="./memories/images/1.jpeg">
+                </div>
+                <div class="grid-item" data-src="./memories/images/2.jpeg" data-sub-html='
+                <h4>Shaun Mandelkorn</h4>
+                <p>One of the most thoughtful people I’ve ever met. Leah never missed an opportunity to send a note, card or piece or art to her friends.</p>
+                '> <img class="fluid" src="./memories/images/2.jpeg">
+                </div>
+                <div class="grid-item" data-src="./memories/images/4.jpeg" data-sub-html='
+                <h4>Brendan Magee</h4>
+                <p>The first summer of the pandemic was marked by a lot of selfies—here&#39;s another one of Leah, Ethan,
+                    and myself in my kitchen (July 19, 2020)</p>
+                    '>
+                    <img class="fluid" src="./memories/images/4.jpeg">
+                </div>
+                <div class="grid-item" data-src="./memories/images/5.jpeg" data-sub-html='
+                <h4>Shannon Adair</h4>
+                <p>An ornament that Leah made for us years ago. It came in a beautiful hand made box and we hang it on our tree every year. So much creative talent.</p>
+                '>
+                    <img class="fluid" src="./memories/images/5.jpeg">
+                </div>
+                <div class="grid-item" data-src="./memories/images/6.jpeg" data-sub-html='
+                <h4>Shaun Mandelkorn</h4>
+                <p>Leah the photographer. She had a cool double-exposer camera she would take interesting photos with, and this Polaroid that she used to take some of the best photos at my brother&#39;s wedding. Looking classy too, with that mischievous smile. I will always remember her like this.
+                    </p>
+                    '>
+                    <img class="fluid" src="./memories/images/6.jpeg">
+                </div>
+                <div class="grid-item" data-poster="./memories/video/video-2-thumb.png"
+                    data-sub-html="<h4>Brendan Magee</h4><p>Making origami on a slow night at Tigers (September 30, 2018)</p>"
+                    data-html="#video2">
+                    <img class="fluid" src="./memories/video/video-2-thumb.png" />
+                    </a>
+                </div>
+                <div class="grid-item" data-poster="./memories/video/video-1-thumb.png"
+                    data-sub-html="<h4>Brendan Magee</h4><p>After a night of revelry at Ten Tigers Parlour, Leah decided that piggyback was the best way to travel up Georgia Avenue (August 2018)</p>"
+                    data-html="#video1">
+                    <img class="fluid" src="./memories/video/video-1-thumb.png" />
+                    </a>
+                </div>
+                <div class="grid-item" data-src="./memories/images/7.jpeg" data-sub-html='
+                <h4>Shaun Mandelkorn</h4>
+                <p>Leah and I stopped by a World Market on our way to Ashville, NC in 2016 for my brother&#39;s wedding...</p>
+                    '>
+                    <img class="fluid" src="./memories/images/7.jpeg">
+                </div>
+                <div class="grid-item" data-src="./memories/images/8.jpeg" data-sub-html='
+                <h4>Sarah Lokerson</h4>
+                <p>At Death & Co in NYC Fall 2015. We thought we were such hot shit. I was the pretender. Leah was the real deal. </p>
+                '>
+                    <img class="fluid" src="./memories/images/8.jpeg">
+                </div>
+                <div class="grid-item" data-src="./memories/images/9.jpeg" data-sub-html='
+                <h4>Shaun Mandelkorn</h4>
+                <p>The cullinary genius on display. April 6, 2016.</p>
+                '>
+                    <img class="fluid" src="./memories/images/9.jpeg">
+                </div>
+                <div class="grid-item" data-src="./memories/images/10.jpeg" data-sub-html='
+                <h4>Brendan Magee</h4>
+                <p>For Halloween 2020, we decided to chill and watch the movie Clue together</p>
+                '>
+                    <img class="fluid" src="./memories/images/10.jpeg">
+                </div>
+                <div class="grid-item" data-src="./memories/images/11.jpeg" data-sub-html='
+                <h4>Shannon Adair</h4>
+                <p>Early in the season 2003-2004</p>
+                '>
+                    <img class="fluid" src="./memories/images/11.jpeg">
+                </div>
+                <div class="grid-item" data-src="./memories/images/12.jpeg" data-sub-html='
+                <h4>Brendan Magee</h4>
+                <p>A stately family portrait (August 31, 2020)</p>
+                '>
+                    <img class="fluid" src="./memories/images/12.jpeg">
+                </div>
+                <div class="grid-item" data-src="./memories/images/13.jpeg" data-sub-html='
+                <h4>Brendan Magee</h4>
+                <p>The dog decided just to leap right up on Leah&#39;s lap, but she took it in stride and embraced the
+                    rambunctious pet (late October 2020) </p>
+                    '>
+                    <img class="fluid" src="./memories/images/13.jpeg">
+                </div>
+                <div class="grid-item" data-src="./memories/images/14.jpeg" data-sub-html='
+                <h4>Always loved that hat.</h4>
+                <p>Shaun Mandelkorn</p>
+                '>
+                    <img class="fluid" src="./memories/images/14.jpeg">
+                </div>
+                <div class="grid-item" data-src="./memories/images/15.jpeg" data-sub-html='
+                <h4>Shannon Adair</h4>
+                <p>Leah and Sarah with me at the Holiday Showcase December 2003.  I met Leah when she was in junior high and she always tried to tell me that dance "wasn&#39;t
+                    her thing". She was a natural and was a joy to watch. </p>
+                    '>
+                    <img class="fluid" src="./memories/images/15.jpeg">
+                </div>
+                <div style="display:none;" id="video4">
+                    <video class="lg-video-object lg-html5" controls preload="none">
+                        <source src="./memories/video/video-4.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <div class="grid-item" data-src="./memories/images/16.jpeg" data-sub-html='
+                <h4>Shannon Adair</h4>
+                <p>Kellyn & Leah enjoying 2nd place at state, 2004.</p>
+                '>
+                    <img class="fluid" src="./memories/images/16.jpeg">
+                </div>
+                <div class="grid-item" data-src="./memories/images/17.jpeg" data-sub-html='
+                <h4>Brendan Magee</h4>
+                <p>This is the feast that Leah prepared in anticipation of a celebration of Rosh Hashanah on Ethan&#39; s
+                    rooftop overlooking Malcolm X Park. She spent two days working on it (with Bill&#39;s help), and she
+                    even went through and labeled things with a bunch of delightful inside jokes (September 19,
+                    2020).</p>
+                    '>
+                    <img class="fluid" src="./memories/images/17.jpeg">
+                </div>
+                <div class="grid-item" data-src="./memories/images/18.jpeg" data-sub-html='
+                <h4>Shaun Mandelkorn</h4>
+                <p>Thanksgiving... 2016?</p>
+                '>
+                    <img class="fluid" src="./memories/images/18.jpeg">
+                </div>
+                <div class="grid-item" data-src="./memories/images/19.jpeg" data-sub-html='
+                <h4>Shannon Adair</h4>
+                <p>And one more....</p>
+                '>
+                    <img class="fluid" src="./memories/images/19.jpeg">
+                </div>
+                <div class="grid-item" data-src="./memories/images/20.jpeg" data-sub-html='
+                <h4>Shaun Mandelkorn</h4>
+                <p>For years she had a giant glass drum of gummies over her fridge. She&#39;d slowly eat it down so I&#39;d
+                    try to remember to bring some over whenever I saw her, especially those licorice bears.</p>
+                    '>
+                    <img class="fluid" src="./memories/images/20.jpeg">
+                </div>
+                <div class="grid-item" data-src="./memories/images/21.jpeg" data-sub-html='
+                <h4>Brendan Magee</h4>
+                <p>Impractical yet stylish eyewear, upstairs at Ten Tigers (April 7, 2019)</p>
+                '>
+                    <img class="fluid" src="./memories/images/21.jpeg">
+                </div>
+                <div class="grid-item" data-src="./memories/images/22.jpeg" data-sub-html='
+                <h4>Brendan Magee</h4>
+                <p>Another fun selfie of Leah and Ethan, quite indicative how we spent most of the summer of 2020
+                </p>
+                '>
+                    <img class="fluid" src="./memories/images/22.jpeg">
+                </div>
+                <div class="grid-item" data-src="./memories/images/23.jpeg" data-sub-html='
+                <h4>Brendan Magee</h4>
+                <p>This was taken the morning after the first night Leah crashed with Idi and me at our apartment. I was so elated to see another human being—let alone one of my favorite people—that I had to take an absurd selfie and send it to Ethan and Omar (June 2, 2020).</p>
+                '>
+                    <img class="fluid" src="./memories/images/23.jpeg">
+                </div>
+                <div class="grid-item" data-src="./memories/images/24.jpeg" data-sub-html='
+                <h4>Brendan Magee</h4>
+                <p>I awoke one morning to find that Leah had surreptitiously placed this gem of a childhood photo on my refrigerator (November 2020).</p>
+                '>
+                    <img class="fluid" src="./memories/images/24.jpeg">
+                </div>
+                <div class="grid-item" data-src="./memories/images/25.jpeg" data-sub-html='
+                <h4>Shannon Adair</h4>
+                <p>Leah & Sarah at the team dinner at the state dance competition.  State was always the 3rd weekend in March, so often fell on or around Leah&#39;s birthday. We
+                    always made reservations at Whose Song & Larry&#39;s because there was a guitar player that would come
+                    out and sing funny songs at the tables. One year we told him it was Leah&#39;s birthday so he told her
+                    to go get her free dessert at the dessert bar. Leah and Sarah wandered around the restaurant for
+                    quite some time before they realized that a dessert bar didn&#39;t exist. ☺</p>
+                    '>
+                    <img class="fluid" src="./memories/images/25.jpeg">
+                </div>
+                <div class="grid-item" data-src="./memories/images/26.jpeg" data-sub-html='
+                <h4>Shaun Mandelkorn</h4>
+                <p>I’ll probably take this down later but wanted to share with Leah’s friends today on her birthday. Leah had an illness as bad as any other. She suffered, but she did it with dignity, kindness, humor.</p>
+                '>
+                    <img class="fluid" src="./memories/images/26.jpeg">
+                </div>
+                <div class="grid-item" data-src="./memories/images/27.jpeg" data-sub-html='
+                <h4>Shaun Mandelkorn</h4>
+                
+                '>
+                    <img class="fluid" src="./memories/images/27.jpeg">
+                </div>
+                <div class="grid-item" data-src="./memories/images/28.jpeg"
+                    data-sub-html='
+                <h4>Shaun Mandelkorn</h4>
+                <p>Shaman chic. I got that Jacket from a friend in college who brought it back from Peru. I never wore it but always called it the "Shaman coat." My mom thought it was Leah'
+                    s and gave it to her a few years ago. I saw Leah in it out in town one time. I just laughed and gave
+                    her a hug. I always thought of Leah as a Shaman. </p>
+                    '>
+                    <img class="fluid" src="./memories/images/28.jpeg">
+                </div>
+                <div class="grid-item" data-src="./memories/images/29.jpeg" data-sub-html='
+                <h4>Jeremy Higgins</h4>
+                
+                '>
+                    <img class="fluid" src="./memories/images/29.jpeg">
+                </div>
+                <div class="grid-item" data-src="./memories/images/30.jpeg" data-sub-html='
+                <h4>Jeremy Higgins</h4>
+                '>
+                    <img class="fluid" src="./memories/images/30.jpeg">
+                </div>
+                <div class="grid-item" data-src="./memories/images/31.jpeg" data-sub-html='
+                <h4>Iris Ho</h4>
+                <p>Leah, showing off her HMart haul and love for rice. She was sweet to let me know whenever she was making an HMart run and offered to pick me up groceries. Rice, kimchi, dumplings and candy were a must. August 2020. 
+
+                </p>
+                '>
+                    <img class="fluid" src="./memories/images/31.jpeg">
+                </div>
+                <div class="grid-item" data-poster="./memories/video/video-3-thumb.png"
+                    data-sub-html="<h4>Shannon Adair</h4><p>This was from a holiday showcase in 2003. It was on vhs so I had to use my phone. The challenges of living in a small rural area.</p>"
+                    data-html="#video3">
+                    <img class="fluid" src="./memories/video/video-3-thumb.png" />
+                    </a>
+                </div>
+                <div class="grid-item" data-src="./memories/images/32.jpeg" data-sub-html='
+                <h4>Iris Ho</h4>
+                <p>July 31, 2020. Leah took me out for my birthday, we had frozen French 75s and oysters. It was so great. And i remember imagining taking Leah out next year for something similar to celebrate her March birthday. </p>
+                '>
+                    <img class="fluid" src="./memories/images/32.jpeg">
+                </div>
+                <div class="grid-item" data-src="./memories/images/33.jpeg" data-sub-html='
+                <h4>Miguel Barajas</h4>
+                <p>One of the many fun nights at Ten Tigers. I believe it was a drag show night. </p>
+                '>
+                    <img class="fluid" src="./memories/images/33.jpeg">
+                </div>
+                <div class="grid-item" data-src="./memories/images/34.jpeg" data-sub-html='
+                <h4>Miguel Barajas</h4>
+                <p>🍾🍾🍾</p>
+                '>
+                    <img class="fluid" src="./memories/images/34.jpeg">
+                </div>
+                <div class="grid-item" data-src="./memories/images/35.jpeg" data-sub-html='
+                <h4>Cassandra Velasquez</h4>
+                <p>Nails done and bellies full of oysters and white wine April 2019.</p>
+                '>
+                    <img class="fluid" src="./memories/images/35.jpeg">
+                </div>
+                <div class="grid-item" data-src="./memories/images/36.jpeg" data-sub-html='
+                <h4>Brendan Magee</h4>
+                <p>Leah wearing one of her favorite "garments," the Napsack (i.e., a sleeping bag that you can wear like a coat/dress)</p>
+                '>
+                    <img class="fluid" src="./memories/images/36.jpeg">
+                </div>
+                <div class="grid-item" data-src="./memories/images/37.jpeg" data-sub-html='
+                <h4>Miguel Barajas</h4>
+                <p>I believe we were headed to brunch in this picture. We knew we were going to get drunk so Leah packed us some pocket cheese to eat in our Uber. </p>
+                '>
+                    <img class="fluid" src="./memories/images/37.jpeg">
+                </div>
+                <div class="grid-item" data-src="./memories/images/38.jpeg" data-sub-html='
+                <h4>Shaun Mandelkorn</h4>
+                <p>Strawberry Lake, Eastern Oregon. September 15, 2016.</p>
+                '>
+                    <img class="fluid" src="./memories/images/38.jpeg">
+                </div>
+                <div class="grid-item" data-src="./memories/images/39.jpeg" data-sub-html='
+                <h4>Stephanie Vink</h4>
+                <p>Honored that she took the time to write me a haiku..even though she was completely wrong on this one :p</p>
+                '>
+                    <img class="fluid" src="./memories/images/39.jpeg">
+                </div>
+                <div class="grid-item" data-src="./memories/images/40.jpeg" data-sub-html='
+                <h4>Shaun Mandelkorn</h4>
+                
+                '>
+                    <img class="fluid" src="./memories/images/40.jpeg">
+                </div>
+                <div class="grid-item" data-src="./memories/images/41.jpeg" data-sub-html='
+                <h4>Brendan Magee</h4>
+                <p>This photo of Leah and Ethan is from Thanksgiving 2020, at my parents&#39; house in Kensington, MD. Leah
+                    did her level best to work her way through the mountain of food my mother put on her plate.</p>
+                    '>
+                    <img class="fluid" src="./memories/images/41.jpeg">
+                </div>
+                <div class="grid-item" data-src="./memories/images/42.jpeg" data-sub-html='
+                <h4>Sarah Lokerson</h4>
+                <p>Taken at Leah’s apartment in Columbia Heights summer 2014. My husband went out of town for a boys fishing trip. Leah invited me over for an elaborate dinner she made. We spent the night drinking cocktails blasting 90s alt rock (Wonderwall may have been on repeat). </p>
+                '>
+                    <img class="fluid" src="./memories/images/42.jpeg">
+                </div>
+                <div class="grid-item" data-src="./memories/images/43.jpeg" data-sub-html='
+                <h4>Brendan Magee</h4>
+                <p>The curtain call for Ten Tigers (September 2, 2019)</p>
+                '>
+                    <img class="fluid" src="./memories/images/43.jpeg">
+                </div>
+                <div class="grid-item" data-src="./memories/images/44.jpeg" data-sub-html='
+                <h4>Sarah Lokerson</h4>
+                <p>At Bull Run Winery fall 2015. We moved to NYC the year before but came back to see friends we missed. She borrowed a car & drove out to the sticks because she didn’t want to miss me.</p>
+                '>
+                    <img class="fluid" src="./memories/images/44.jpeg">
+                </div>
+                <div class="grid-item" data-src="./memories/images/45.jpeg" data-sub-html='
+                <h4>Brendan Magee</h4>
+                <p>An early pandemic video chat, featuring Leah, Idi (out of the frame), Ethan, and myself (May 7, 2020)</p>
+                '>
+                    <img class="fluid" src="./memories/images/45.jpeg">
+                </div>
+                <div class="grid-item" data-src="./memories/images/46.jpeg" data-sub-html='
+                <h4>Brendan Magee</h4>
+                <p>We ordered delivery from Le Diplomate and ate outside on the roof deck at Ethan&#39;s building. Ethan
+                    and I were having some sort of debate, and we didn&#39;t notice Leah snapping this picture over her
+                    shoulder—clearly she was amused by the discourse (October 18, 2020).</p>
+                    '>
+                    <img class="fluid" src="./memories/images/46.jpeg">
+                </div>
+                <div class="grid-item" data-src="./memories/images/47.jpeg" data-sub-html='
+                <h4>Brendan Magee</h4>
+                <p>That one night at Tigers when Leah made name tags for all of us, herself included (Summer 2018)</p>
+                    '>
+                    <img class="fluid" src="./memories/images/47.jpeg">
+                </div>
+                <div class="grid-item" data-src="./memories/images/48.jpeg" data-sub-html='
+                <h4>Shaun Mandelkorn</h4>
+                <p>Leah and I hanging out at the 17th Street Festival in 2017. We staged this to look as pretentious as possible, but Leah loved to read and argue about philosophy with me. She was fond of Greil Marcus&#39;
+                    book Lipstick Traces, and we&#39;d laugh at Ian Svenonius&#39; essays. She once bought me a book of
+                    the philosopher Slavoy Zizek&#39;s jokes for my birthday. She often teased me for not being a
+                    &#34;true anarchist&#34; like her. One time when I wanted to see some (Holywood) movie she said,
+                    &#34;OK, we can go to church.&#34;</p>'>
+                    <img class="fluid" src="./memories/images/48.jpeg">
+                </div>
+                <div class="grid-item" data-src="./memories/images/49.jpeg" data-sub-html='
+                <h4>Jeremy Higgins</h4>
+                <p>Manjur and Sarah out at 18th street lounge </p>
+                '>
+                    <img class="fluid" src="./memories/images/49.jpeg">
+                </div>
+                <div class="grid-item" data-src="./memories/images/50.jpeg" data-sub-html='
+                <h4>Shaun Mandelkorn</h4>
+                <p>Leah giving me that cold panda shoulder. Asheville, 2016.</p>
+                '>
+                    <img class="fluid" src="./memories/images/50.jpeg">
+                </div>
+                <div class="grid-item" data-src="./memories/images/51.jpeg" data-sub-html='
+                <h4>Sarah Lokerson</h4>
+                <p>Her response to the announcement of my daughter’s birth November 2019. That was her sense of humor & I loved it. She never got to meet my daughter but she did spend time with my son (even accompanied us to his toddler music class where she danced & sang along) & almost always “liked” or left a sweet comment on their photos when I posted them. </p>
+                '>
+                    <img class="fluid" src="./memories/images/51.jpeg">
+                </div>
+                <div class="grid-item" data-src="./memories/images/52.jpeg" data-sub-html='
+                <h4>Sarah Lokerson</h4>
+                <p>Not positive where this is from but where & whenever... we had fun.
+                </p>
+                '>
+                    <img class="fluid" src="./memories/images/52.jpeg">
+                </div>
+                <div class="grid-item" data-poster="./memories/video/video-4-thumb.png" data-sub-html="<h4>Brendan Magee</h4><p>&#34;How to make a michelada&#34; by your favorite U Hall bartender
+                    (thanks to Iris Ho for the video)</p>" data-html="#video4">
+                    <img class="fluid" src="./memories/video/video-4-thumb.png" />
+                    </a>
+                </div>
+                <div class="grid-item" data-src="./memories/images/53.jpeg" data-sub-html='
+                <h4>Stephanie Vink</h4>
+                <p>Caught Leah&#39;s live art show during Art All Night D.C! So many talents she had! </p>
+                    '>
+                    <img class="fluid" src="./memories/images/53.jpeg">
+                </div>
+                <div class="grid-item" data-src="./memories/images/54.jpeg" data-sub-html='
+                <h4>Shaun Mandelkorn</h4>
+                '>
+                    <img class="fluid" src="./memories/images/54.jpeg">
+                </div>
+                <div class="grid-item" data-src="./memories/images/55.jpeg" data-sub-html='
+                <h4>McDennis Thomas</h4>
+                <p>To my life long friend, my sister and my light! You brought so much joy in my life. It&#39;s hard to
+                    think about you not being here but I hope you are finally at peace. All the memories we shared. The
+                    smiles, the tears and the love. If there is one thing I was certain of was that you knew how much I
+                    love you. Two kindred spirits that seem to gravitate to each other over the past 13 years. Thank for
+                    sharing your life with me. You will fever be missed but always remembered. Your brother from another
+                    mother, Jose Manuel </p>
+                    '>
+                    <img class="fluid" src="./memories/images/55.jpeg">
+                </div>
+                <div class="grid-item" data-src="./memories/images/56.jpeg" data-sub-html='
+                <h4>Jeremy Higgins</h4>
+                <p>@ 9:30 club. Leah got creative with the ketchup </p>
+                '>
+                    <img class="fluid" src="./memories/images/56.jpeg">
+                </div>
+                <div class="grid-item" data-src="./memories/images/57.jpeg" data-sub-html='
+                <h4>Shannon Adair</h4>
+                <p>Action shots at state.  Always a highlight when the performance was over.</p>
+                '>
+                    <img class="fluid" src="./memories/images/57.jpeg">
+                </div>
+            </div>
         </div>
+    </main>
+    <div id=" donations" class="col">
+        <div class="col-1 flex-vertical-center">
+            <div class="text-container">
+                <h1>Memorial
+                    Donations
+                </h1>
+                <p>
+                    Leah
+                    was
+                    passionate
+                    about
+                    several
+                    causes
+                    -
+                    racial
+                    justice,
+                    gender
+                    equality,
+                    mental
+                    health,
+                    to
+                    name
+                    a
+                    few.
+                    We've
+                    vetted
+                    and
+                    listed
+                    a
+                    few
+                    organizations
+                    here
+                    that
+                    are
+                    working
+                    on
+                    such
+                    issues,
+                    and
+                    ask
+                    donations
+                    be
+                    made
+                    in
+                    Leah's
+                    memory.
+                </p>
+                <p>
+                    <b>StopAAPIHate</b><br>
+                    <a href="https://donate.givedirect.org/?cid=14711">donate.givedirect.org/?cid=14711</a><br>
+                    <br>
+                    <b>KORAFF
+                        -
+                        Korean
+                        Adoptee
+                        Family
+                        Foundation</b><br>
+                    <a
+                        href="https://www.gofundme.com/f/in-memory-of-leah-rin-supulski">gofundme.com/f/in-memory-of-leah-rin-supulski</a>
+                </p>
+            </div>
+        </div>
+        <div class="col-1">
+            <img src="./images/nsplsh_39415f7065477253625a63_mv2_d_2848_4288_s_4_2.webp" class="fluid fit-cover">
+        </div>
+
+    </div>
     </main>
     <footer>
         <p class="text-center">
@@ -144,6 +566,32 @@
         </p>
     </footer>
 
+    <!-- Light Gallery  -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+    <!-- Light Gallery Video Support -->
+    <script src="./lg-video.js"></script>
+    <!-- Masonry JS -->
+    <script type="text/javascript" src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
+
+    <script type="text/javascript">
+        // Initialize Masonry
+        var elem = document.querySelector('.grid');
+        var msnry = new Masonry(elem, {
+            columnWidth: '.grid-sizer',
+            gutter: ".gutter-sizer",
+            itemSelector: '.grid-item',
+            percentPosition: true,
+            horizontalOrder: true,
+            autoplayFirstVideo: true,
+            videojs: true,
+        });
+        // Initialize Lightgallery
+        lightGallery(document.getElementById('lightgallery'), {
+
+        })
+    </script>
 </body>
 
 </html>
