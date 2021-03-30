@@ -51,7 +51,7 @@
                 </div>
             </div>
             <div class="col-1">
-                <img src="./images/d5b292_4e921bb19e154e599fb4403a6849768f_mv2.webp" class="fluid fit-cover">
+                <img src="./images/d5b292_4e921bb19e154e599fb4403a6849768f_mv2.jpg" class="fluid fit-cover">
             </div>
         </div>
         <div id="leave-memory" class="col col-rev">
@@ -88,16 +88,17 @@
                     <source src="./memories/video/video-3.mp4" type="video/mp4">
                 </video>
             </div>
+            <div style="display:none;" id="video4">
+                <video class="lg-video-object lg-html5" controls preload="none">
+                    <source src="./memories/video/video-4.mp4" type="video/mp4">
+                </video>
+            </div>
 
 
             <!-- Gallery  -->
             <div id="lightgallery" class="grid">
                 <div class="grid-sizer"></div>
                 <div class="gutter-sizer"></div>
-
-
-
-
                 <div class="grid-item" data-src="./memories/images/1.jpeg" data-sub-html='
                 <h4>Stephanie Vink</h4>
                 <p>We bonded with our love of black clothing :)</p>
@@ -181,7 +182,7 @@
                 <p>The dog decided just to leap right up on Leah&#39;s lap, but she took it in stride and embraced the
                     rambunctious pet (late October 2020) </p>
                     '>
-                    <img class="fluid" src="./memories/images/13.jpeg">
+                    <img class="fluid" src="./memories/images/1.jpeg3">
                 </div>
                 <div class="grid-item" data-src="./memories/images/14.jpeg" data-sub-html='
                 <h4>Always loved that hat.</h4>
@@ -196,11 +197,7 @@
                     '>
                     <img class="fluid" src="./memories/images/15.jpeg">
                 </div>
-                <div style="display:none;" id="video4">
-                    <video class="lg-video-object lg-html5" controls preload="none">
-                        <source src="./memories/video/video-4.mp4" type="video/mp4">
-                    </video>
-                </div>
+
 
                 <div class="grid-item" data-src="./memories/images/16.jpeg" data-sub-html='
                 <h4>Shannon Adair</h4>
@@ -347,7 +344,7 @@
                 '>
                     <img class="fluid" src="./memories/images/36.jpeg">
                 </div>
-                <div class="grid-item" data-src="./memories/images/37.jpeg" data-sub-html='
+                <div class="grid-item" data-src="./memories/images/37" data-sub-html='
                 <h4>Miguel Barajas</h4>
                 <p>I believe we were headed to brunch in this picture. We knew we were going to get drunk so Leah packed us some pocket cheese to eat in our Uber. </p>
                 '>
@@ -450,9 +447,9 @@
                 '>
                     <img class="fluid" src="./memories/images/52.jpeg">
                 </div>
-                <div class="grid-item" data-poster="./memories/video/video-4-thumb.png" data-sub-html="<h4>Brendan Magee</h4><p>&#34;How to make a michelada&#34; by your favorite U Hall bartender
+                <div class="grid-item" data-poster="./memories/video/video-4-thumb" data-sub-html="<h4>Brendan Magee</h4><p>&#34;How to make a michelada&#34; by your favorite U Hall bartender
                     (thanks to Iris Ho for the video)</p>" data-html="#video4">
-                    <img class="fluid" src="./memories/video/video-4-thumb.png" />
+                    <img class="fluid" src="./memories/video/video-4-thumb" />
                     </a>
                 </div>
                 <div class="grid-item" data-src="./memories/images/53.jpeg" data-sub-html='
@@ -555,7 +552,7 @@
             </div>
         </div>
         <div class="col-1">
-            <img src="./images/nsplsh_39415f7065477253625a63_mv2_d_2848_4288_s_4_2.webp" class="fluid fit-cover">
+            <img src="./images/nsplsh_39415f7065477253625a63_mv2_d_2848_4288_s_4_2.jpg" class="fluid fit-cover">
         </div>
 
     </div>
@@ -576,21 +573,25 @@
 
 
     <script type="text/javascript">
-        // Initialize Masonry
-        var elem = document.querySelector('.grid');
-        var msnry = new Masonry(elem, {
-            columnWidth: '.grid-sizer',
-            gutter: ".gutter-sizer",
-            itemSelector: '.grid-item',
-            percentPosition: true,
-            horizontalOrder: true,
-            autoplayFirstVideo: true,
-            videojs: true,
-        });
-        // Initialize Lightgallery
-        lightGallery(document.getElementById('lightgallery'), {
+        // wait for images to finish downloading
+        // wait for browser to calculate image sizes since width/hight is not set
+        window.addEventListener('load', (event) => {
+            // Initialize Lightgallery
+            lightGallery(document.getElementById('lightgallery'), {
 
-        })
+            })
+            // Initialize Masonry
+            var elem = document.querySelector('.grid');
+            var msnry = new Masonry(elem, {
+                columnWidth: '.grid-sizer',
+                gutter: ".gutter-sizer",
+                itemSelector: '.grid-item',
+                percentPosition: true,
+                horizontalOrder: true,
+                autoplayFirstVideo: true,
+                videojs: true,
+            });
+        });
     </script>
 </body>
 
