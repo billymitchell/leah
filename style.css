@@ -26,6 +26,7 @@ html {
 .fit-cover {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 
@@ -149,5 +150,6 @@ button:hover {
 }
 
 img.lg-has-poster {
+  -o-object-fit: contain !important;
   object-fit: contain !important;
 }
